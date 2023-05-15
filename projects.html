@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>My projects</title>
+    <link href="styles.css" rel="stylesheet" />
+    <script>
+      console.log("Page loaded successfulyl");
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.4.2/lib/p5.js"></script>
+    <script src="src/balloon.js"></script>
+    <script src="src/game.js"></script>
+  </head>
+  <body onload="greeting()">
+    <div class="topnav">
+      <a href="index.html">My Profile</a>
+      <a href="projects.html">My Projects</a>
+      <a href="https://www.github.com/ahmedbader97">My Github</a>
+
+      <form action="https://bbc.co.uk/search" target="_blank">
+        <input type="text" id="search" name="q" placeholder="BBC Search.." />
+      </form>
+    </div>
+    <section>
+      <h1>Projects</h1>
+      <table>
+        <thead>
+          <tr>
+            <th>Project Name</th>
+            <th>Description</th>
+            <th>Year</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Agile Project</td>
+            <td>Did some stuff with user stories</td>
+            <td>2023</td>
+          </tr>
+          <tr>
+            <td>Safari Park Project</td>
+            <td>Demonstrated polymorphism</td>
+            <td>2023</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="box-2" id="game-container">
+      <h2 id="game-title">Javascript Game</h2>
+
+      <p>Score: <span id="score">0</span></p>
+
+      <!-- <script>
+        function setup() {
+          let canvas = createCanvas(640, 480);
+          canvas.parent("game-container");
+          background(64);
+        }
+
+        function draw() {
+          background(135, 206, 235);
+        }
+      </script> -->
+    </section>
+  </body>
+</html>
